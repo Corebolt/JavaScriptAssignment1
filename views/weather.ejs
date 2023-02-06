@@ -1,0 +1,14 @@
+<% for(let x=0; x < 1; x++){%>
+    <% if(location_title != undefined){ %>
+        <h2> <%= location %> </h2>
+        
+    <% } %>
+    <% for(let i=0; i < location_title.length; i++){ %>
+        
+        <h3> Weather for: <%= location_title[i].day %> </h3>
+        <p> Temperature of: <%= location_title[i].temperature %> </p>
+        <p> Forecast is: <%= location_title[i].forecast %> </p>
+        <p> Percipitation of: <%= location_title[i].percipitation %> </p>
+        <p> Humidity of: <%= location_title[i].humidity %> </p>
+    <% } %>
+<%}%>

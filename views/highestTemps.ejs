@@ -1,0 +1,13 @@
+<% for(let x=0; x < 1; x++){%>
+    <% if(hottest != undefined){ %>
+        <h2> <%= location %> </h2>
+        
+    <% } %>
+           
+        <h3> Weather for: <%= locationData.day %> </h3>
+        <p> Temperature of: <%= hottest %> </p>
+        <p> Forecast is: <%= locationData.forecast %> </p>
+        <p> Percipitation of: <%= locationData.percipitation %> </p>
+        <p> Humidity of: <%= locationData.humidity %> </p>
+   
+<%}%>

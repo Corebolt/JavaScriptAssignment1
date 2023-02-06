@@ -1,0 +1,11 @@
+<% for(let x = 0 ; x <  allWeather.length ; x++){ %>
+    <h2> <%= allWeather[x][x].locationName %></h2>
+    <% for(let i = 0 ; i <  7 ; i++){ %>
+
+            <h3>For: <%= allWeather[x][i].day %></h3>
+            <p> Temperature of: <%= allWeather[x][i].temperature %> </p>
+        <p> Forecast is: <%= allWeather[x][i].forecast %> </p>
+        <p> Percipitation of: <%= allWeather[x][i].percipitation %> </p>
+        <p> Humidity of: <%= allWeather[x][i].humidity %> </p>
+        <% } %> 
+    <% } %>
